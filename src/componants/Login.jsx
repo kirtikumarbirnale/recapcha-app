@@ -1,4 +1,5 @@
 import React from 'react'
+import { useId } from 'react'
 import { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useNavigate } from 'react-router-dom'
@@ -7,6 +8,7 @@ const Login = () => {
     const SITE_KYE = "6LdHuTArAAAAAMnDiZAzFJ-v-NjfAQi2QZ7Iop2z"
 
     const nevigate = useNavigate()
+    useId()
 
     const [formData, setFormData] = useState({
         email: "",
